@@ -47,10 +47,22 @@
         <h1>Settings</h1>
         <h2>Alfred Wayne</h2>
         <h3>Notification Settings</h3>
-        <p>Push notifications</p>
-        <p>Call on phone</p>
-        <p>Notify when second in line</p>
+        <label class="container">Push notifications
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Call on phone
+          <input type="checkbox" >
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Notify when second in line
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
         <p>Volume</p>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
         <h3>Account Settings</h3>
         <p>Log out</p>
         <p>Change Email</p>
