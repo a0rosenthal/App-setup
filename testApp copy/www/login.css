@@ -1,16 +1,125 @@
-body{
-  background: orange;
+
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-h1{
-  color: white;
-  text-align: center;
-  font: Roboto;
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#FF9E2B;
+    /* background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    ); */
+    background-attachment:fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:90px;
+    font-weight:lighter;
+    margin:0px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+input[type=text] {
+    width: 80%;
+    height: 50px;
+    margin-top:4%;
+    margin-left:10%;
+    margin-bottom:8%;
+    /* box-sizing: border-box; */
+    border: none;
+    background-color: #FFF2D9;
+    color: black;
+    font-size:28px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+input[type=password] {
+    width: 80%;
+    height: 50px;
+    margin-top:4%;
+    margin-left:10%;
+    margin-bottom:8%;
+    /* box-sizing: border-box; */
+    border: none;
+    background-color: #FFF2D9;
+    color: black;
+    font-size:28px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+  width: 60%;
+  height: 50px;
+  margin-top:4%;
+  margin-left:20%;
+  margin-bottom:6%;
+  /* box-sizing: border-box; */
+  border: none;
+  background-color: #FFF2D9;
+  color: black;
+  font-size:28px;
+  text-align:center;
   font-family: 'Roboto', sans-serif;
-  display: inline-block;
-  font-size: 60px;
-  transform: scale(1, 1);
-  font-weight: 300;
-  padding-left:90px;
-  padding-top: 120px;
+
+}
+
+label {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-left: 35px;
 }
