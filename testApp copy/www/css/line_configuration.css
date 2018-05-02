@@ -56,6 +56,10 @@ body {
     }
 }
 
+.settings {
+  background-color: #FFF2D9;
+}
+
 h1 {
     font-size:28px;
     font-weight:lighter;
