@@ -1,0 +1,65 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#FF9E2B;
+    /* background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    ); */
+    background-attachment:fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+h1 {
+    font-size:28px;
+    font-weight:lighter;
+    margin:0px;
+    margin-top: 30px;
+    margin-bottom: 10%;
+    margin-left:90px;
+    overflow:visible;
+    padding:0px;
+    text-align:left;
+    color: #FFFFFF;
+}
+
+#X{
+  margin-left: 15px;
+  /* margin-top: 15px; */
+  float:left;
+}
+
+.camera {
+    position: absolute;
+    width: 375px;
+    height: 721px;
+    left: 0px;
+    top: 91px;
+
+    background: #FFFFFF;
+}
+
+#qr {
+    position: absolute;
+    width: 381px;
+    height: 381px;
+    top: 173px;
+
+    background: url(sample.png);
+}

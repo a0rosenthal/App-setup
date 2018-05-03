@@ -48,33 +48,45 @@ body {
 
 /* Landscape layout (with min-width) */
 @media screen and  (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
 }
 
 h1 {
-    font-size:50px;
+    font-size:48px;
     font-weight:normal;
-    margin:0px;
+    margin:15% 0px 25% 0px;
     overflow:visible;
     padding: 10%;
     text-align:center;
     color: #FFFFFF;
 }
-#linename, #distance{
-  margin: 5%;
-}
 
-input[type=text], #lname, #distance{
-    width: 20%;
-    padding: 12px 20px;
-    margin: 0 10% 5px 10%;
+#cancelbut{
+    margin: 15px 0px 0px 15px;
+}
+input[type=text]{
+    width: 50%;
+    padding: 12px 0px;
+    margin: 1% 10% 10% 25%;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background: #FFF2D9;
+    border: 2px solid #FFF2D9;
+}
+input[type=submit]{
+    margin: 30% 0px 0px 0px;
+    width: 100%;
+    font-size: 24px;
+    background: #86342F;
+    border: 2px solid #86342F;
+    height: 50px;
+    color: white;
+}
+.lname{
+  font-size: 18px;
+  width: 20%;
+  padding: 12px 0px 0px 0px;
+  margin: 0px 10% 0px 25%;
+  color: #86342F;
 }
 
 .event {
@@ -84,6 +96,13 @@ input[type=text], #lname, #distance{
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
+}
+
+#advancedSetting{
+    margin: 0px 10% 0px 25%;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
 }
 
 .event.listening {
