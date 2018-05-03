@@ -1,24 +1,5 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 
 <head>
@@ -38,7 +19,7 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/line_manage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/RestaurantInfo.css" />
     <title>Hello World</title>
     <script>
     function updateLabel(variable) {
@@ -48,9 +29,6 @@
         var pair = vars[i].split('=');
         if (decodeURIComponent(pair[0]) == variable) {
             document.getElementById("name").innerHTML=pair[1];
-            if(pair[1] == ""){
-                document.getElementById("name").innerHTML="Unnamed LINE!";
-            }
             break;
         }
     }
@@ -66,26 +44,25 @@
 
     <div class="app">
         <div id="topbarid">
-            <img src="./img/n13.png" alt="Smiley face" id="exit" height="40" width="40" id="accountPic" class="topbar">
-            <p id="name" class="topbar"> N13 Line </p>
+            <img src="./img/logo.png" alt="Smiley face" id="exit" height="40" width="40" id="accountPic" class="topbar">
+            <p id="name" class="topbar"> Restaurant Info</p>
             <script>
                 updateLabel("linename");
             </script>
             <script>
                 updateFontSize();
             </script>
-            <a href="./line_configuration.html"><img src="./img/settings.png" alt="gear" height="40" width="40" id="settings" class="topbar"></a>
+            <img src="./img/logo.png" alt="gear" height="40" width="40" id="settings" class="topbar">
         </div>
         <div id="box">
             <ul id="customerLine">
-                <li id="cust1"> Alex WantedI</li>
-                <li id="cust2"> ABe tterName </li>
-                <li id="cust3"> Soe HereUGo </li>
-                <li id="cust4"> boopbeep </li>
+                <li id="cust1"> <img src="dish.png" alt="gear" height="300" width="300" id="settings" class="topbar"> </li>
+                <li id="cust2"> asidjaisdj </li>
+                <li id="cust3"> aidfkdfkdfdk </li>
             </ul>
         </div>
         <div id="bottombox">
-            <div id="waittime">Approximate wait per party:<span id="time"> 10 </span>min</div>
+            <div id="waittime">Party of:<span id="time"> 1 </span>min</div>
         </div>
         <a href="./index.html"> <p id="closeLineButton">Close Line </p></a>
     </div>

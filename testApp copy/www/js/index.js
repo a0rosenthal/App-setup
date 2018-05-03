@@ -47,6 +47,25 @@ var app = {
         console.log('Received Event: ' + id);
     }
     };
+    var cook = document.cookie;
+    console.log(cook);
+    var cook1 = cook.split(';');
+    var flagfound = false;
+    for(var i = 0; i < cook1.length; i++)
+    {
+        var cook2 = cook1[i];
+        var cooksplit = cook2.split('=');
+        var str = cooksplit[0].replace(/\s/g, '');
+        if(str ==="login")
+        {
+            flagfound = true;
+            break;
+        }
+    }
+
+    if(flagfound===false){
+        window.location="./Login.html";
+    }
 
     var oldResults = ['1','2','3','4'];
     var elementIsClicked = false;

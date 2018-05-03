@@ -38,29 +38,56 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/line_manage.css" />
     <title>Hello World</title>
+    <script>
+    function updateLabel(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            document.getElementById("name").innerHTML=pair[1];
+            if(pair[1] == ""){
+                document.getElementById("name").innerHTML="Unnamed LINE!";
+            }
+            break;
+        }
+    }
+    console.log('Query variable %s not found', variable);
+    }
+    function updateFontSize(variable) {
+        document.getElementById("name").style.fontSize = "x-large";
+    }
+    </script>
 </head>
 
 <body>
+
     <div class="app">
-        <h1>Materials</h1>
-        <h2>COSC 480B: User-Centered Design</h2>
-        <h3>Course Website</h3>
-        <img src="../img/triangle.png" alt="collapse" width="26">
-        <h3>About Face: The Essentia...</h3>
-        <p>About Face: The Essentials of Interaction Design (4th Edition) by Alan Cooper, Robert Reimann, David Cronin, and Christopher Noessel,
-          John Wiley & Sons, Inc. (2014), ISBN: 9781118766576
-          <a href="https://ebookcentral.proquest.com/lib/colgate/detail.action?docID=1762072"> Access on ProQuest Ebook Central (free through Colgate Library) </a></p>
-        <img src="../img/triangle.png" alt="collapse" width="26">
-        <h3>Building Mobile Experien...</h3>
-        <p>Building Mobile Experiences by Frank Bentley and Ed Barrett,
-          The MIT Press (2012), ISBN: 9780262017930
-          <a href="https://ebookcentral.proquest.com/lib/colgate/detail.action?docID=3339504">Access on ProQuest Ebook Central (free through Colgate Library) </a>
-        </p>
-
-
-
+        <div id="topbarid">
+            <img src="./img/n13.png" alt="Smiley face" id="exit" height="40" width="40" id="accountPic" class="topbar">
+            <p id="name" class="topbar"> N13 Line </p>
+            <script>
+                updateLabel("linename");
+            </script>
+            <script>
+                updateFontSize();
+            </script>
+            <a href="./line_configuration.html"><img src="./img/settings.png" alt="gear" height="40" width="40" id="settings" class="topbar"></a>
+        </div>
+        <div id="box">
+            <ul id="customerLine">
+                <li id="cust1"> Alex WantedI</li>
+                <li id="cust2"> ABe tterName </li>
+                <li id="cust3"> Soe HereUGo </li>
+                <li id="cust4"> boopbeep </li>
+            </ul>
+        </div>
+        <div id="bottombox">
+            <div id="waittime">Approximate wait per party:<span id="time"> 10 </span>min</div>
+        </div>
+        <a href="./index.html"> <p id="closeLineButton">Close Line </p></a>
     </div>
     <!-- <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

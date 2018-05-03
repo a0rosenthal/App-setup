@@ -46,4 +46,61 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
-};
+    };
+    var cook = document.cookie;
+    console.log(cook);
+    var cook1 = cook.split(';');
+    var flagfound = false;
+    for(var i = 0; i < cook1.length; i++)
+    {
+        var cook2 = cook1[i];
+        var cooksplit = cook2.split('=');
+        var str = cooksplit[0].replace(/\s/g, '');
+        if(str ==="login")
+        {
+            flagfound = true;
+            break;
+        }
+    }
+
+    if(flagfound===false){
+        window.location="./Login.html";
+    }
+
+    var oldResults = ['1','2','3','4'];
+    var elementIsClicked = false;
+    function clickHandler(){ // declare a function that updates the state
+        var list = document.getElementById('list');
+        var items = list.childNodes;
+        oldResults[1] = items[1].innerHTML;
+        items[1].innerHTML="Sorry, no results :(";
+        oldResults[3] = items[3].innerHTML;
+        items[3].innerHTML=" ";
+        oldResults[5] = items[5].innerHTML;
+        items[5].innerHTML=" ";
+        oldResults[7] = items[7].innerHTML;
+        items[7].innerHTML = " ";
+        document.getElementById("searchbutton").src = "./img/exitButton.png";
+        document.getElementById("searchbutton").removeEventListener("click", clickHandler);
+        document.getElementById("searchbutton").id = "cancelbutton";
+        var ele = document.getElementById("cancelbutton");
+        ele.addEventListener('click', cancelSearch);
+    }
+
+    var element = document.getElementById('searchbutton'); // grab a reference to your element
+    element.addEventListener('click', clickHandler);
+
+    function cancelSearch(){
+        var list = document.getElementById('list');
+        var items = list.childNodes;
+        items[1].innerHTML = oldResults[1];
+        items[3].innerHTML = oldResults[3];
+        items[5].innerHTML = oldResults[5];
+        items[7].innerHTML = oldResults[7];
+        var cb = document.getElementById("cancelbutton");
+        cb.removeEventListener("click",clickHandler);
+        cb.src = "./img/searchbutton.png";
+        cb.id = "searchbutton";
+        var ele = document.getElementById("searchbutton");
+        ele.addEventListener('click',clickHandler);
+    }
