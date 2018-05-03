@@ -107,6 +107,17 @@ h2 {
 
 .settings {
     position: absolute;
+    width: 375px;
+    left: 10px;
+}
+
+.formfields {
+    top: 200px;
+    padding-left: 20%;
+    margin-right: 80px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    width: 375px;
 }
 
 .container {
