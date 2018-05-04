@@ -1,29 +1,12 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
-html,body {
+body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#FF9E2B;
     /* background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
@@ -43,78 +26,79 @@ html,body {
     width:100%;
 }
 
-/* Portrait layout (default) */
-
-/* Landscape layout (with min-width) */
-@media screen and  (min-aspect-ratio: 1/1) and (min-width:400px) {
+h1 {
+    font-size:28px;
+    font-weight:lighter;
+    margin:0px;
+    margin-top: 30px;
+    margin-bottom: 10%;
+    margin-left:90px;
+    overflow:visible;
+    padding:0px;
+    text-align:left;
+    color: #FFFFFF;
 }
 
-#topbarid{
-    background-color: #FF9E2B;
-    width: 100%;
-    display:inline-block;
-;}
-.topbar{
-    padding: 5%;
-    margin:0%;
+
 }
-img{
-    float:left;
+h3{
+  color:white;
+  padding-top: 100px;
+  position: fixed;
+  bottom: 0;
 }
-#settings{
-    right: 30px;
-    float:right;
+
+.camera {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+
+    top: 91px;
+
+    background: #FFFFFF;
 }
-#name{
-    float:left;
-    padding:6% 0% 0% 7%;
-    margin:0%;
+
+
+#linesnearYoulabel{
+    font-size: 36px;
+    color:#FFFFFF;
+    margin: 0px 0px 0px 10%;
 }
-div#box{
-    clear:right;
-    clear:left;
-    background-image: repeating-linear-gradient(180deg, #FFF2D9, #FFF2D9 55px, white 55px, white 110px);
-    position:relative;
-    padding: 135% 0% 0% 0%;
-}
+
 ul{
-    padding: 0px;
-    position:absolute;
-    bottom: 8px;
-    left: 16px;
-    top: -20px;
-    font-size: 24px;
+    background-color: #FFF2D9;
+    padding: 30% 0% 40% 0%;
     list-style-type: none;
 }
-
-#cust1{
-}
-
-
-#cust1, #cust2, #cust3, #cust4{
-    padding: 10% 0px 10% 0px;
+li{
+    font-size: 30px;
+    margin: 50% 40% 0% 40%;
+    color: #333333;
 }
 
 div#bottombox{
     font-size: 20px;
     display:inline-block;
-    float:left;
+    float:center;
+    padding-left: 90px;
 }
 
+div#waittime{
+
+    display:inline-block;
+    float:center;
+    padding-top: 60px;
+}
 #time{
     background-color:#FFF2D9;
 }
-.even, .odd{
-    width:100%;
-    margin:0%;
-    list-style-type: none;
-    font-size: 24px;
-}
 
-#closeLineButton{
-    font-size:28px;
-    text-align: center;
+input[type=submit]{
     margin: 30% 0px 0px 0px;
-    text-decoration: none;
-    color: #86342F;
+    width: 100%;
+    font-size: 24px;
+    background: #86342F;
+    border: 2px solid #86342F;
+    height: 50px;
+    color: white;
 }
