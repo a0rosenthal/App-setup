@@ -13,34 +13,33 @@
 </head>
 
 <body>
-    <div class="app">
-        <a href="./line_manage.html"><img id="back" src="img/backArrow.png" alt="backarrow"></a>
-        <h1>Line Configuration</h1>
-        <h2>Line Settings</h2>
-        <div class="settings">
-            <form class="formfields" action="/action_page.php">
-                Queue Name:
-                <input type="text" name="queuename">
-            </form>
-            <label class="container">Private Line
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Permanent Line
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-            <label class="container">Register Line
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label>
-        </div>
-        <a href="./line_manage.html">
-            <div id="button">
-                <p id="done">Done</p>
-            </div>
-        </a>
+  <div class="app">
+    <a href="./line_manage.html"><img id="back" src="img/backArrow.png" alt="backarrow"></a>
+    <h1>Line Configuration</h1>
+    <h3>Line Settings</h3>
+    <form action="/" class="other">
+      Queue Name: <input type="text" name="usrname" size="10">
+    </form>
+    <label class="other">Description</label>
+    <label class="container">Private Line
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Permanent Line
+      <input type="checkbox" >
+      <span class="checkmark"></span>
+    </label>
+    <form class="other">
+      Wait per Party (min) <input type="number" value="1" min="0" max="999" id="number">
+    </form>
+    <p>Distance</p>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
+    <a href="./line_manage.html">
+      <button type="button" class="button">Done</button>
+    </a>
+  </div>
 </body>
 
 </html>
