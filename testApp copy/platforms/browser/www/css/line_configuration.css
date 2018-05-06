@@ -38,21 +38,40 @@ body {
     }
 }
 
+.other {
+    display: block;
+    font-weight:lighter;
+    position: relative;
+    padding-left: 11%;
+    margin-right: 80px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
 h1 {
-    position: absolute;
-    width: 231px;
-    height: 31px;
-    left: 72px;
-    top: 5px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 28px;
-    text-align: center;
-
+    font-size:28px;
+    font-weight:lighter;
+    margin:0px;
+    margin-top: 27px;
+    margin-bottom: 10%;
+    margin-left:100px;
+    overflow:visible;
+    padding:0px;
+    text-align:left;
     color: #FFFFFF;
+}
+
+h2 {
+
+  font-size:24px;
+  font-weight:lighter;
+  text-align:center;
+  color: #86342F;
+  text-decoration: underline;
+  margin-bottom:0;
+  margin-top:5px;
+  /* float:left; */
 }
 
 #back{
@@ -63,57 +82,45 @@ h1 {
   top: 29px;
 }
 
-#button {
-    position: absolute;
-    width: 104px;
-    height: 56px;
-    left: 252px;
-    top: 670px;
-
-    background: #86342F;
+h3{
+    clear:left;
+  font-size:24px;
+  margin-top:20px;
+  margin-bottom:10px;
+  font-weight:normal;
+  text-align:center;
+  color: #86342F;
 }
 
-#done {
-    position: absolute;
-    width: 62px;
-    height: 20px;
-    left: 20px;
-    vertical-align: middle;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 24px;
-    text-align: center;
-
-    color: #FFFFFF;
+h4{
+  margin-top:5px;
+  margin-bottom:15%;
+  padding-top:0;
+  clear:left;
+  font-size:18px;
+  font-weight:100;
+  text-align:center;
+  color: #222222;
 }
 
-h2 {
-    position: absolute;
-    width: 271px;
-    height: 470px;
-    left: 50px;
-    top: 120px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 36px;
-
-    color: #000000;
+#profile{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
 }
 
-.settings {
-    position: absolute;
+#X{
+  margin-left: 15px;
+  /* margin-top: 15px; */
+  float:left;
 }
 
+/* Customize the label (the container) */
 .container {
   display: block;
   font-weight:lighter;
   position: relative;
-  top: 200px;
   padding-left: 20%;
   margin-right: 80px;
   margin-bottom: 12px;
@@ -176,5 +183,123 @@ h2 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight:lighter;
+  line-height: normal;
+  font-size: 24px;
+  margin-left: 15%;
+  margin-right: 35px;
+  margin-top: 0px;
+  padding-top: 0px;
+  float:left;
+
+}
+
+img{
+
+
+}
+
+a{
+  color:#000000;
+
+}
+
+#number {
+    width: 2em;
+}
+
+.button {
+    position: absolute;
+    width: 104px;
+    height: 56px;
+    left: 252px;
+    top: 665px;
+
+    background: #86342F;
+    border: none;
+    color: #FFFFFF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.slidecontainer {
+    margin: 2% 0 0 0;
+    width: 40%; /* Width of the outside container */
+    float:left;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: #FFFFFF;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: url('../img/sliderHandle.png');
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 24px;
+    border: 0;
+    background: url('../img/sliderHandle.png');
+    cursor: pointer;
+}
+
+
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
 }
 
