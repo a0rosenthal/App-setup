@@ -26,6 +26,12 @@ body {
     width:100%;
 }
 
+#dish{
+  width:375px;
+  height:314px;
+  /* height:auto; */
+}
+
 h1 {
     font-size:28px;
     font-weight:lighter;
