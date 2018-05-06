@@ -71,8 +71,8 @@ img{
     margin:0%;
 }
 div#box{
-    clear:right; 
-    clear:left; 
+    clear:right;
+    clear:left;
     background-image: repeating-linear-gradient(180deg, #FFF2D9, #FFF2D9 55px, white 55px, white 110px);
     position:relative;
     padding: 135% 0% 0% 0%;
@@ -80,11 +80,11 @@ div#box{
 ul{
     padding: 0px;
     position:absolute;
-    bottom: 8px;
+    bottom: 0px;
     left: 16px;
-    top: -20px;
+    top: -35px;
     font-size: 24px;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 #cust1{

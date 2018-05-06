@@ -55,10 +55,10 @@
           <input type="password" id="pwordC" name="pwordC">
         </form>
         <label class="container">Are you a business?
-          <input type="checkbox">
+          <input type="checkbox" id="business" onclick="switchBusiness()">
           <span class="checkmark"></span>
         </label>
-        <a href="./index.html"><div class="container2">
+        <a href="./index.html" id="continue"><div class="container2">
           <img src="img/line.png" style="width:100%;">
           <div class="centered">Continue</div>
         </div></a>
@@ -67,11 +67,17 @@
 
 
     </div>
-    <!-- <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        //app.initialize();
-    </script> -->
+    <script>
+    function switchBusiness() {
+      console.log("test");
+        var checkBox = document.getElementById("business");
+        var continueButton = document.getElementById("continue");
+        if (checkBox.checked == true){
+            continueButton.setAttribute('href', 'businessRegistration.html');
+        } else {
+           continueButton.setAttribute('href', 'index.html');
+        }
+    }
+    </script>
 </body>
-
 </html>
