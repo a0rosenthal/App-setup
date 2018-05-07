@@ -35,7 +35,7 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/RestaurantInfo.css" />
+    <link rel="stylesheet" type="text/css" href="RestaurantInfo.css" />
     <title>Restaurant Info</title>
 </head>
 
@@ -44,7 +44,7 @@
 
         <h1>Restaurant Info</h1>
         <div class="camera">
-            <img id="dish" src="img/dish.png" width="400" height="300">
+            <img id="dish" src="dish.png" height="340" width="375">
         </div>
         <div class="Restaurant">
            <h3> N13 </h3>
@@ -52,13 +52,17 @@
     </div>
     <div id="linesnearYoulabel"> Lines near you </div>
         <ul = id = "list">
-            <li> N13  </li>
+            <li> <p>N13</p>  </li>
+            <li> 3 Lebanon St, Hamilton, NY 13346 </li>
+            <li> (315) 228-2002 <li>
         </ul>
     </div>
     <div id="bottombox">
-        <div id="waittime">Party of  <span id="time">  10  </span>   people   </div>
+        <form>
+           <i>Party of: </i> <span id="time"> <input type="text" value="10" text-align="center" > </span></div>
+        </form>
     </div>
-    <input type="submit" value="Get in Line">
+    <a href="./Line_Representation.html" > <input type="submit" value="Get in Line"> </a>
 </body>
 
 </html>
