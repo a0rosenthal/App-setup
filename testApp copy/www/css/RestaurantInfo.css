@@ -69,15 +69,11 @@ ul{
     background-color: #FFF2D9;
     margin: 58% 0% 0% 0%;
     list-style-type: none;
-
 }
-
 
 li{
     font-size: 20px;
-
     color: #333333;
-
 }
 
 div#bottombox{
@@ -95,6 +91,7 @@ div#waittime{
 }
 #time{
     background-color:#FFF2D9;
+    align-self: center;
 }
 
 input[type=submit]{
