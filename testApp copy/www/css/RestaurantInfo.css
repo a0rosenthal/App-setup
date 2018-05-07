@@ -51,8 +51,7 @@ h3{
 .camera {
     position: absolute;
     width: 375px;
-    height: 314px;
-
+    height: 340px;
     top: 91px;
 
     background: #FFFFFF;
@@ -67,8 +66,9 @@ h3{
 
 ul{
     background-color: #FFF2D9;
-    margin: 58% 0% 0% 0%;
+    margin: 69% 0% 0% 0%;
     list-style-type: none;
+    width:400px;
 }
 
 li{
@@ -81,6 +81,7 @@ div#bottombox{
     display:inline-block;
     float:center;
     padding-left: 90px;
+    padding-top: 20%;
 }
 
 div#waittime{
