@@ -105,6 +105,19 @@ input[type=submit]{
     color: white;
 }
 
+input[type=text]{
+    width: 20%;
+    height: 60px;
+    margin-top:4%;
+    margin-left:8%;
+    margin-bottom:8%;
+    border: none;
+    background-color: #FFF2D9;
+    color: black;
+    font-size:28px;
+    text-align:center;
+  }
+
 p{
   color: maroon;
   font-size: 30px;
